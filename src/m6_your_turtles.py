@@ -43,4 +43,22 @@ green_turtle.speed = 10
 size = 300
 
 for k in range(13):
-    red_turtle.draw_triangle
+    red_turtle.draw_square(size)
+    red_turtle.pen_up()
+    red_turtle.right(45)
+    red_turtle.forward(10)
+    red_turtle.left(45)
+    red_turtle.pen_down()
+    green_turtle.draw_square(size)
+    green_turtle.pen_up()
+    green_turtle.right(45)
+    green_turtle.forward(10)
+    green_turtle.left(45)
+    green_turtle.pen_down()
+
+    size = size-12
+
+window.close_on_mouse_click()
+
+
+
